@@ -21,10 +21,17 @@ months:
   - name: Corpus Christi
     regions: [br]
     function: easter(year)+60
+  - name: Cinzas
+    regions: [br]
+    function: easter(year)-46
+    type: informal
   1:
   - name: Dia da Confraternização Universal
     regions: [br]
     mday: 1
+  - name: Aniversário de São Paulo
+    regions: [br]
+    mday: 25
   4:
   - name: Dia de Tiradentes
     regions: [br]
@@ -33,6 +40,10 @@ months:
   - name: Dia do Trabalho
     regions: [br]
     mday: 1
+  7:
+  - name: Revolução Constitucionalista
+    regions: [br]
+    mday: 9
   9:
   - name: Proclamação da Independência
     regions: [br]
@@ -54,7 +65,9 @@ months:
     mday: 25
 tests: |
     {Date.civil(2008,1,1) => 'Dia da Confraternização Universal',
-     Date.civil(2005,2,8) => 'Carnaval',
+     Date.civil(2008,7,9) => 'Revolução Constitucionalista',
+     Date.civil(2008,1,25) => 'Aniversário de São Paulo',
+     Date.civil(2014,3,5) => 'Cinzas',
      Date.civil(2006,2,28) => 'Carnaval',
      Date.civil(2007,2,20) => 'Carnaval',
      Date.civil(2008,2,5) => 'Carnaval',

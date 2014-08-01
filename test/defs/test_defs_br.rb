@@ -8,7 +8,9 @@ class BrDefinitionTests < Test::Unit::TestCase  # :nodoc:
 
   def test_br
 {Date.civil(2008,1,1) => 'Dia da Confraternização Universal',
- Date.civil(2005,2,8) => 'Carnaval',
+ Date.civil(2008,7,9) => 'Revolução Constitucionalista',
+ Date.civil(2008,1,25) => 'Aniversário de São Paulo',
+ Date.civil(2014,3,5) => 'Cinzas',
  Date.civil(2006,2,28) => 'Carnaval',
  Date.civil(2007,2,20) => 'Carnaval',
  Date.civil(2008,2,5) => 'Carnaval',
